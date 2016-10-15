@@ -1,0 +1,287 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+
+
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
+
+/* this is for the header on the projects page */
+header{
+    padding: .5em;
+    color: white;
+    background-color: #8c8c8c;
+    clear: left;
+    text-align: center;
+    font-family: 'Open Sans',serif;
+}
+footer {
+    padding: .5em;
+    color: white;
+    background-color: #279fcd;
+    clear: left;
+    text-align: center;
+}
+
+/* This is my pic on the index page */
+.img-circle{
+	display: block;
+	border-radius: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* This is for the team pic on the team page */
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.container {
+    width: 100%;
+    border: 1px solid #000000;
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+   
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+	margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+h1, h2, h3, p {
+	text-align: center;
+	margin: 0;
+	
+}
+
+h4{
+ margin: 0;
+ text-align: center
+ }
+ p{
+ margin: 0;
+ text-align: center
+ }
+
+
+div img {
+	
+    display: inline-block;
+    width: 100px;
+    height:100px;
+    box-shadow: 10px 10px 5px #888888;
+        border: 1px solid;
+    border-radius: 20px;
+}
+
+div:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+
+.container1 {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#c0c0c0;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #ff7533;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+body {
+
+    background-color:rgba(185,185,185,0.2)    /* 10% opaque gray */ ;
+}
+
+.centered1 { 
+	text-align: center; 
+	list-style-position:inside;
+	}
+
+.button {
+    display: block;
+    width: 150px;
+    margin: 5px auto;
+    }
+
+blockquote {
+    max-width:390px;
+    color: #5c4c40;
+    text-align: center; 
+    border-left: 3px solid #897860; 
+    border-right: 3px solid #897860; 
+    padding-left: 5px;
+        padding-top: .5cm;
+        padding-bottom: .5cm;
+    margin:0 auto;
+    background:#ffffff;
+    width:auto;
+    display:table
+}
